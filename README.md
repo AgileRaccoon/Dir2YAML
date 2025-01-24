@@ -12,7 +12,7 @@ Tkinter を使用したGUIを備えており、
 などを、ひとつの画面から行うことができます。
 
 ## 目次
-- [DirectoryYmlGenerator](#directoryymlgenerator)
+- [Dir2YAML](#dir2yaml)
   - [目次](#目次)
   - [特徴](#特徴)
   - [セットアップ](#セットアップ)
@@ -61,7 +61,8 @@ Tkinter を使用したGUIを備えており、
    ```bash
    pip install pyyaml pyperclip
    ```
-   - tkinter は標準ライブラリですが、環境によっては別途インストールが必要な場合があります。
+   - tkinter は標準ライブラリですが、Mac環境では標準Pythonに含まれていない場合があります。
+   - その場合は、Homebrewなどを用いて brew install python-tk などを実行し、tkinterを別途インストールしてください。
 
 3. **アプリケーションの起動**  
    ```bash
