@@ -27,7 +27,7 @@ class DirectoryYmlGUI:
         # ディレクトリ一覧・最大ファイルサイズ等の設定読み込み
         self.directory_list = self.config_data.get("directories", [])
         self.user_ignore_patterns = self.config_data.get("ignore_patterns", [])
-        self.max_file_size_bytes = self.config_data.get("max_file_size_bytes", 50000)
+        self.max_file_size_bytes = self.config_data.get("max_file_size_bytes", 500000)
 
         # コピー/保存 ボタン有効時の色を保持
         self.copy_button_active_bg = "#2196F3"
