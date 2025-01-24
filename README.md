@@ -19,6 +19,7 @@ Tkinter を使用したGUIを備えており、
   - [使い方](#使い方)
   - [設定ファイル (`config.json`) について](#設定ファイル-configjson-について)
   - [更新履歴](#更新履歴)
+    - [軽微な更新 (v0.7.1 - stable)](#軽微な更新-v071---stable)
     - [first commit (v0.7.0 - stable)](#first-commit-v070---stable)
 
 ---
@@ -113,7 +114,7 @@ Tkinter を使用したGUIを備えており、
       "*.tmp",
       "*.bak"
     ],
-    "max_file_size_bytes": 50000
+    "max_file_size_bytes": 500000
   }
   ```
 - `max_file_size_bytes` でファイル内容の読み込み上限をバイト単位で指定。
@@ -121,6 +122,10 @@ Tkinter を使用したGUIを備えており、
 ---
 
 ## 更新履歴
+
+### 軽微な更新 (v0.7.1 - stable)
+- Macなどダークテーマ環境で白文字設定のモジュールが読めない問題を修正
+- 最大読み込みファイルサイズが50,000byteでは少なすぎるため500,000byteに修正
 
 ### first commit (v0.7.0 - stable)
 - ディレクトリやサブディレクトリの重複登録を禁止
