@@ -20,7 +20,7 @@ Tkinter を使用したGUIを備えており、
   - [設定ファイル (`config.json`) について](#設定ファイル-configjson-について)
   - [更新履歴](#更新履歴)
     - [軽微な更新 (v0.7.1 - stable)](#軽微な更新-v071---stable)
-    - [first commit (v0.7.0 - stable)](#first-commit-v070---stable)
+    - [公開 (v0.7.0 - stable)](#公開-v070---stable)
 
 ---
 
@@ -127,7 +127,7 @@ Tkinter を使用したGUIを備えており、
 - Macなどダークテーマ環境で白文字設定のモジュールが読めない問題を修正
 - 最大読み込みファイルサイズが50,000byteでは少なすぎるため500,000byteに修正
 
-### first commit (v0.7.0 - stable)
+### 公開 (v0.7.0 - stable)
 - ディレクトリやサブディレクトリの重複登録を禁止
 - Ignore Patterns を「デフォルト(編集不可) + ユーザ追加(登録ボタン)」の形式に整理
 - プロジェクト名のテキストボックスをGUIに追加  
