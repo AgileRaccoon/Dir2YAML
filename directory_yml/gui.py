@@ -89,7 +89,6 @@ class DirectoryYmlGUI:
             text="YAML生成",
             command=self.start_generate_yaml,
             bg="#4CAF50",
-            fg="white"
         )
         self.generate_button.pack(side=tk.LEFT, padx=10)
 
@@ -110,7 +109,6 @@ class DirectoryYmlGUI:
             button_frame,
             text="コピー",
             command=self.copy_to_clipboard,
-            fg="white",
             bg=self.copy_button_active_bg,
             state="disabled"
         )
@@ -121,7 +119,6 @@ class DirectoryYmlGUI:
             button_frame,
             text="保存",
             command=self.save_to_file,
-            fg="white",
             bg=self.save_button_active_bg,
             state="disabled"
         )
