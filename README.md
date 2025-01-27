@@ -19,6 +19,7 @@ Tkinter を使用したGUIを備えており、
   - [使い方](#使い方)
   - [設定ファイル (`config.json`) について](#設定ファイル-configjson-について)
   - [更新履歴](#更新履歴)
+    - [設定をプロファイル式に変更 (v0.8.0 - stable)](#設定をプロファイル式に変更-v080---stable)
     - [追加と更新 (v0.7.2 - stable)](#追加と更新-v072---stable)
     - [軽微な更新 (v0.7.1 - stable)](#軽微な更新-v071---stable)
     - [公開 (v0.7.0 - stable)](#公開-v070---stable)
@@ -104,25 +105,36 @@ Tkinter を使用したGUIを備えており、
 
 ## 設定ファイル (`config.json`) について
 
-- アプリを起動すると同階層に `config.json` が作成され、ユーザが最後に指定したディレクトリや除外パターン等が保存されます。
+- アプリを起動すると同階層に `config.json` が作成され、ユーザが指定したディレクトリや除外パターン等が保存されます。
 - 例:
   ```json
   {
-    "directories": [
-      "C:/path/to/mydir"
-    ],
-    "ignore_patterns": [
-      "*.tmp",
-      "*.bak"
-    ],
-    "max_file_size_bytes": 500000
-  }
+    "config_version": "1.0.0",
+    "profiles": {
+        "profile1": {
+            "project_name": "",
+            "directories": [
+                "C:/path/to/mydir"
+            ],
+            "ignore_patterns": [
+               "*.tmp",
+               "*.bak"
+            ],
+            "max_file_size_bytes": 500000
+        }
+    },
+    "active_profile": "profile1"
+   }
   ```
-- `max_file_size_bytes` でファイル内容の読み込み上限をバイト単位で指定。
-
 ---
 
 ## 更新履歴
+### 設定をプロファイル式に変更 (v0.8.0 - stable)
+- コンフィグを拡張し、単一ではなくプロファイルとして保存するように大きく改善。
+- 旧版のconfigも可能な限り取り込むように修正
+- プロファイル式への変更に併せてGUIも大幅に修正
+- 最大ファイルサイズをGUIから変更できるように 
+
 ### 追加と更新 (v0.7.2 - stable)
 - Readmeの更新
 - ウインドウサイズを修正
