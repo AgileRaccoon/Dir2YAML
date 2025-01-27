@@ -15,7 +15,7 @@ class DirectoryYmlGUI:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Dir2YAML")
-        self.root.geometry("550x600")
+        self.root.geometry("650x600")
 
         self.progress_queue = queue.Queue()
         self._yaml_result = ""
